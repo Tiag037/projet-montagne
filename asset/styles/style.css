@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: url("../img/bg.jpg") center/cover fixed;
+}
+
+main {
+  margin: 0 50px;
+  background-color: white;
+}
+
+.slogan {
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slogan div h1 {
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+  font-family: "Inter", sans-serif;
+}
+.slogan div p {
+  color: white;
+  font-family: "Merriweather", serif;
+}/*# sourceMappingURL=style.css.map */

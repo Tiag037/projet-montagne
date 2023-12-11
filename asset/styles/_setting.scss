@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color1: white;
+$color2: rgb(29, 29, 29);
+$color3: grey;
+$fontprincipal:"Inter", sans-serif;
+$fontsecondary: "Merriweather", serif;
+
+@mixin centerChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li{
+    list-style: none;
+}
