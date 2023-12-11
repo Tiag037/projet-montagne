@@ -1,27 +1,4 @@
 @import "./setting";
-@import "./layout/body";
+@import "./layout/header";
 @import "./layout/main";
-
-.slogan{
-  height: 550px;
-  @include centerChild;
-    div{
-        h1 {
-            text-align: center;
-            color: $color1;
-            font-size: 4rem;
-            text-transform: uppercase;
-            word-spacing: 10px;
-            letter-spacing: 4px;
-            margin-bottom: 60px;
-            font-family: "Inter", sans-serif;;
-        }
-        p{
-            color: $color1;
-            font-family: $fontsecondary;
-        }
-    }
-
-}
-
-
+@import "./layout/footer";

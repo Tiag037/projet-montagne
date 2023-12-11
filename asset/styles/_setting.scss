@@ -1,21 +1,72 @@
+$font1: "Inter", sans-serif;
+$font2: "Merriweather", serif;
+$white1: rgb(243, 243, 243);
+$black1: rgb(17, 17, 17);
+$grey1: rgb(209, 209, 209);
+$grey2: rgb(233, 233, 233);
+$grey3: rgb(105, 105, 105);
+
+@mixin title {
+  font-family: $font1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-$color1: white;
-$color2: rgb(29, 29, 29);
-$color3: grey;
-$fontprincipal:"Inter", sans-serif;
-$fontsecondary: "Merriweather", serif;
-
-@mixin centerChild {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+//sert a scroller doucement lors d'une ancre dans une page
+html {
+  scroll-behavior: smooth;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: $white1;
+}
+
+body {
+  background: url(../img/bg.jpg) fixed center / cover;
+  text-align: center;
+  font-family: $font2;
+  max-width: 1300px;
+  margin: 0 auto;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $black1;
+    animation: animBefor 1.5s ease forwards;
+    animation-delay: 0.15s;
+
+    @keyframes animBefor {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.btn {
+  background: none;
+  border: 2px solid $black1;
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  @include title;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
